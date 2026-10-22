@@ -44,7 +44,7 @@ Arkadaşların tarayıcı yerine kurulabilir bir oyun istiyorsa:
 2. `npm install` ve ardından `npm run dist` çalıştır.
 3. `dist/CivcivKiyameti-Kurulum-1.0.0.exe` dosyasını arkadaşlarına gönder.
 
-Kurulan oyun açılınca doğrudan bu sunucuya bağlanır ve ana menü gelir. Sunucuya ulaşılamazsa "Tekrar dene" ve diğer seçenekler çıkar. Diğer seçenekler: başka bir adrese bağlanmak ya da **Sunucu ben olayım** (oyun o bilgisayarda sunucu açar, istenirse internet linki de üretir). Oyun içinde **F10** bu ekrana döner, **F11** tam ekran yapar. Geliştirirken `npm run desktop` ile kurulum yapmadan açılır.
+Kurulan oyun açılınca hiçbir şey sormadan doğrudan bu sunucuya bağlanır ve ana menü gelir. Sunucuya ulaşılamazsa yalnızca "Tekrar dene" butonu çıkar. **F11** tam ekran yapar. Geliştirirken `npm run desktop` ile kurulum yapmadan açılır.
 
 ### E) Render (ücretsiz alternatif)
 
@@ -123,7 +123,7 @@ client/js/world.js   3D çiftlik, civciv modelleri, animasyonlar, efektler
 client/js/minigames.js  görev mini oyunları
 client/js/audio.js   WebAudio ile üretilen ses efektleri
 tests/flow-test.js   uçtan uca sunucu testi
-electron/            masaüstü uygulaması (açılış ekranı, otomatik bağlanma, sunucu açma)
+electron/            masaüstü uygulaması (config.json'daki sunucuya doğrudan bağlanır)
 Dockerfile           Coolify / Docker için sunucu imajı
 ```
 
