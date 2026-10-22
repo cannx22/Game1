@@ -11,7 +11,11 @@ Sunucuya ayrıca bir şey yüklemen gerekmez. Coolify depodaki `Dockerfile` ile 
 
 ---
 
-## 1. Alan adını hazırla (önerilir)
+## 1. Alan adı
+
+**Alan adın yoksa:** Bu adımı atla. Coolify kaynağı oluştururken **Domains** alanına kendi adresini yazar, örneğin `http://abc123xyz.SUNUCU-IP.sslip.io`. Bu adresi olduğu gibi bırak; **`http://`** ile kalsın, `https`'e çevirme (Coolify bu adresler için genelde SSL sertifikası alamaz). Oyun düz `http` ile sorunsuz çalışır. Sonraki adımlarda geçen `civciv.alanadin.com` yerine bu adresi kullan.
+
+**Alan adın varsa (önerilir):**
 
 DNS panelinde (Cloudflare, GoDaddy vb.) bir **A kaydı** ekle:
 
@@ -44,7 +48,7 @@ Kaynağın **Configuration → General** sayfasında:
 | **Domains** | `https://civciv.alanadin.com` (alan adın yoksa Coolify'ın verdiği adres kalabilir) |
 | Dockerfile Location | `/Dockerfile` (varsayılan) |
 
-- Alan adının başına **`https://`** yaz. Coolify, Let's Encrypt ile ücretsiz SSL sertifikasını kendisi alır.
+- Kendi alan adını kullanıyorsan başına **`https://`** yaz; Coolify, Let's Encrypt ile ücretsiz SSL sertifikasını kendisi alır. Coolify'ın verdiği `sslip.io` adresini kullanıyorsan `http://` olarak bırak.
 - **Environment Variables** eklemen gerekmez. Port zaten Dockerfile'da `4747` olarak ayarlı.
 - **Health Check**: Dockerfile'da tanımlı, ayrıca bir şey yapma. Coolify panelinde açmak istersen yol `/health`, port `4747`.
 
