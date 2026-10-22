@@ -92,6 +92,8 @@ Exe açılınca hangi sunucuya bağlanacağını `electron/config.json` dosyası
 
 > İstersen adresi bana gönder, kurulum dosyasını ben oluşturayım.
 
+> `npm run dist` sırasında **"Cannot create symbolic link"** hatası alırsan: Windows **Ayarlar → Sistem → Geliştiriciler için → Geliştirici Modu**'nu aç (ya da terminali bir kereliğine *Yönetici olarak* çalıştır) ve komutu tekrarla. Bu, derleme aracının indirdiği paketteki macOS dosyalarından kaynaklanır; oyunla ilgisi yoktur.
+
 **Arkadaşların için:**
 - Exe'yi çalıştırınca Windows **"Windows bilgisayarınızı korudu"** uyarısı gösterebilir. Uygulama dijital olarak imzalanmadığı için bu normaldir: **Ek bilgi → Yine de çalıştır**.
 - Kurulumdan sonra masaüstündeki **Civciv Kiyameti** simgesiyle açarlar. Oyun doğrudan ana menüyle açılır.
