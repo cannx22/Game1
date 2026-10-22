@@ -1,0 +1,10 @@
+node_modules
+dist
+tools
+electron
+build
+tests
+*.log
+*.bat
+scripts
+.git
